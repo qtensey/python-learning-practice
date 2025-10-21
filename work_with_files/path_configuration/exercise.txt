@@ -1,0 +1,19 @@
+ Цель: Научиться надежно определять пути к файлам, независимо от того, откуда запускается скрипт.
+ 
+ 1. Создай структуру папок:
+ my_project/
+ ├── app/
+ │   └── settings.py
+ └── data/
+     └── users.json
+
+ 2. В файле "settings.py" напиши код, который:
+    - Импортирует "Path" из "pathlib".
+    - Определяет "BASE_DIR" как папку, в которой лежит "settings.py" (то есть, ".../my_project/app").
+    - Определяет "PROJECT_DIR" как корень проекта (то есть, ".../my_project"), используя "BASE_DIR.parent".
+    - Определяет "DATA_PATH", который указывает на "users.json", используя "PROJECT_DIR" (например, "PROJECT_DIR / "data" / "users.json"").
+    - Выводит в консоль абсолютный путь к "DATA_PATH".
+
+ 3. Запусти скрипт "settings.py" двумя способами и убедись, что путь всегда определяется правильно:
+     - "cd my_project/app" и "python settings.py"
+     - "cd my_project" и "python app/settings.py"

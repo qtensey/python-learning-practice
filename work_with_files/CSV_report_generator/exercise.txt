@@ -1,0 +1,21 @@
+Цель: Научиться правильно записывать CSV-файлы, используя "DictWriter" и обязательный параметр "newline=""".
+
+1. "Создай список словарей":
+    
+    """python
+    users = [
+        {"id": 1, "name": "Алиса", "email": "alice@example.com"},
+        {"id": 2, "name": "Борис", "email": "boris@example.com"},
+    ]
+    """
+    
+2. "Напиши функцию":"save_report(users_list: list, output_path: Path)".
+
+3. "Функция должна":
+    - Определить "fieldnames = ["id", "name", "email"]".
+    - Открыть "output_path" в режиме ""w"", с "encoding="utf-8"" и "newline=""".
+    - Создать "csv.DictWriter" с этими "fieldnames".
+    - Записать заголовки ("w.writeheader()").
+    - Записать все данные из "users_list" с помощью "w.writerows(users_list)" (или в цикле через "w.writerow()").
+
+4. Проверь: запусти функцию и открой созданный "users.csv" в Excel или Google Sheets. Убедись, что кириллица читается и нет пустых строк между записями.
