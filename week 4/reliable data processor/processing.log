@@ -1,0 +1,18 @@
+2025-11-11 01:20:36,112 - root - INFO - Система логирования успешно настроена.
+2025-11-11 01:20:36,113 - __main__ - INFO - ============================== START APPLOCATION ==============================
+2025-11-11 01:20:36,113 - __main__ - INFO - test file create: users.csv
+2025-11-11 01:20:36,114 - __main__ - INFO - starting main processing: users.csv
+2025-11-11 01:20:36,114 - processing - INFO - Start processing: users.csv -> users_report.json
+2025-11-11 01:20:36,114 - processing - INFO - Начало задачи: full file processing users.csv...
+2025-11-11 01:20:36,116 - processing - DEBUG - Title read: ['id', 'name', 'email'].
+2025-11-11 01:20:36,116 - processing - WARNING - skip line 4 (data: ['bad_id', 'Oleg', 'oleg@example.com']): invalid literal for int() with base 10: 'bad_id'
+2025-11-11 01:20:36,116 - processing - WARNING - skip line 5 (data: ['4', 'Maria', 'maria@exapmle.com', 'extra field']): Ожидалось 3 столбца, получено 4
+2025-11-11 01:20:36,116 - processing - WARNING - skip line 6 (data: ['5', 'Petr']): Ожидалось 3 столбца, получено 2
+2025-11-11 01:20:36,116 - processing - WARNING - skip line 8 (data: ['', 'empty ID', 'empty@example.com']): invalid literal for int() with base 10: ''
+2025-11-11 01:20:36,117 - processing - WARNING - skip line 9 (data: ['8', 'Stepan', '']): name or email cannot by empty
+2025-11-11 01:20:36,117 - processing - INFO - processing complete. successfull entries: 4
+2025-11-11 01:20:36,118 - processing - INFO - Задача 'full file processing users.csv' завершена за 0.0039 сек.
+2025-11-11 01:20:36,118 - __main__ - INFO - --- ОБРАБОТКА УСПЕШНА ---
+2025-11-11 01:20:36,119 - __main__ - INFO - Успешно обработано: 4 записей.
+2025-11-11 01:20:36,119 - __main__ - INFO - Отчет сохранен в: D:\MyProjects\Python\python backend practices\week 4\reliable data processor\users_report.json
+2025-11-11 01:20:36,121 - __main__ - INFO - ============================== ЗАВЕРШЕНИЕ ПРИЛОЖЕНИЯ ==============================

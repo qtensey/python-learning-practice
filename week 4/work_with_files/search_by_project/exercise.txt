@@ -1,0 +1,10 @@
+Цель: Научиться искать файлы по маске и создавать директории.
+
+1. Напиши функцию "find_and_prepare(search_dir: Path, output_dir: Path)".
+
+2. Функция должна:
+    - Гарантировать, что "output_dir" существует, используя "output_dir.mkdir(parents=True, exist_ok=True)".
+    - Найти все файлы "requirements.txt" во всех подпапках "search_dir", используя "search_dir.rglob("requirements.txt")".
+    - Для каждого найденного файла:
+        - Вывести его путь и размер ("p.stat().st_size").
+        - (Бонус): Скопировать его в "output_dir".

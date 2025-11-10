@@ -1,0 +1,4 @@
+{"event": "login", "user_id": 1}
+{"event": "click", "user_id": 2, "target": "button_buy"}
+{"event": "login", "user_id": 3}
+{"event": "logout", "user_id": 1}
